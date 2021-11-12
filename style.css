@@ -1,7 +1,10 @@
 /**A.1-mise en place police*/
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Dancing+Script:wght@400;500;700&display=swap");
 
-/**B.1-body(ff/m/p/ta)-ul(m/p)-li(lst)-h2(tt/pt/fs)-a(td/c)*/
+/**B.1-html(scroll)-body(ff/m/p/ta)-ul(m/p)-li(lst)-h2(tt/pt/fs)-a(td/c)*/
+html {
+	scroll-behavior: smooth; /*permet des "encres" plus smooth*/
+}
 body {
 	font-family: "Advent Pro", sans-serif;
 	margin: 0;
@@ -161,4 +164,69 @@ h3 {
 	background-color: cyan;
 	margin-left: -180px;
 	box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1); /*inversion du txt avec valeur négative*/
+}
+/* ******************************FORM***************** (1h45m)*/
+/**G.1-foot(bgc/c/p)-form(m/mw)-inp,txta,btn(bor/w/p/m/fsi/ff)-txta()-btn(fsi/bcg)-btn:hov(bgc/c/cur/transi)*/
+footer {
+	background-color: #524a3a;
+	color: #fffae1;
+	padding: 20px 0 10px 0;
+}
+form {
+	margin: 0 auto;
+	max-width: 900px;
+}
+input,
+textarea,
+button {
+	border: none;
+	width: 55%;
+	padding: 15px 10px;
+	margin: 1px 0;
+	font-size: 1.2em;
+	font-family: "Advent Pro", sans-serif; /*Les placeholder ne prennent pas la ff d'ou présence de cette FF*/
+	border-radius: 8px;
+}
+/* textarea {
+	height: 120px;
+} */
+button {
+	font-size: 1.5em;
+	background-color: #fffae1;
+}
+button:hover {
+	background-color: orange;
+	color: #fffae1;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+/**G.2-#secondL(h/w/bgc/m)-#©&icons(d/mb/p)-#©(w/c)-#icons(w/ta)-#icons a(d/p/fsi/c)-#icons a:hov(transf/transi)*/
+#secondLine {
+	height: 1px;
+	width: 75%;
+	background-color: #fffae1;
+	margin: 60px auto;
+}
+#copyrightAndIcons {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0 10%; /*p10% permet un peu de responsiv*/
+}
+#copyright {
+	width: 50%;
+	color: #fffae1;
+}
+#icons {
+	width: 50%;
+	text-align: right; /*Décalage icons*/
+}
+#icons a {
+	display: inline-block; /*pr alignement en plus du flex*/
+	padding: 0 15px;
+	font-size: 1.3em;
+	color: #fffae1;
+}
+#icons a:hover {
+	transform: scale(1.5);
+	transition: 0.1s;
 }
