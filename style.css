@@ -111,7 +111,7 @@ h3 {
 	transition: 0.6s ease-in-out;
 }
 /* ******************************TOURISM***************** (1h30m)*/
-/**F.1-#tour(h/bgc/p)-h2(pt)-#ocean...()*-li(m/h/w/mw/fl/bsh)-
+/**F.1-#tour(h/bgc/p)-h2(pt)-#ocean...()*-li(m/h/w/mw/fl/bsh)*/
 #tourism {
 	height: 1400px;
 	background-color: #f1f2f6;
@@ -140,7 +140,25 @@ h3 {
 	float: left;
 	box-shadow: 6px 6px 28px -1px rgba(255, 166, 0, 0.705);
 }
-/**F.2-p()-(1h37m39)*/
-#tourism p{
-
+/**F.2-p(h/w/bgc/fl/m/fs/pt/bsh)-#castle,#vineyard(fl)-#castle p,#vineyard p(fl/bgc/ml/bsh)(1h37m39)*/
+#tourism p {
+	height: 45px;
+	width: 235px;
+	background-color: #01df74;
+	float: right;
+	margin: 50px -180px 0 0; /*décallage des titre des img car m=-180px à dte*/
+	font-size: 1.5em;
+	padding-top: 15px;
+	box-shadow: 4px 4px 0 1px rgba(90, 161, 43, 1);
+}
+#tourism #castle,
+#tourism #vineyard {
+	float: right;
+}
+#castle p,
+#vineyard p {
+	float: left;
+	background-color: cyan;
+	margin-left: -180px;
+	box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1); /*inversion du txt avec valeur négative*/
 }
