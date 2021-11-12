@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Maison d'hôtes</title>
+</head>
+
+<body>
+    <header>
+        <!--*1-Creer navbar-->
+        <nav>
+            <ul>
+                <!--1.1-href sert d'encre pour revenir en haut de la page-->
+                <li id="logo"><a href="#">Clos Marsault</a></li>
+                <!--*1.2-Autres li-->
+                <li><a href="#languages">Langues</a></li>
+                <li><a href="#reserved">Réserver</a></li>
+                <!--*1.2.1-href sert d'encre pour se rendre en bas de la page-->
+                <li><a href="#contact">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <!--*2.contenu page-->
+        <div id="imgPrincipal">
+            <h1>Clos Marsault</h1>
+            <div class="firstLine"></div>
+            <h3>Chambres d'hôtes</h3>
+        </div>
+    </header>
+
+    <!--*3-section "Presentations & Prestations" -->
+    <section id="presentation">
+        <!--*3.1-->
+        <div id="textIntro">
+            <h2>Un lieu unique, pour un séjour unique</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam consectetur nam quas dicta
+                voluptatibus, ullam excepturi recusandae molestias. Suscipit mollitia ex dolor, nostrum animi fugiat
+                architecto iste esse eveniet eum doloribus aliquid officiis nobis totam? Sunt praesentium expedita
+                libero obcaecati maiores facilis in omnis explicabo possimus itaque optio sed quia fugit quo cupiditate
+                corrupti, voluptate mollitia nemo ex, veniam modi necessitatibus eos quisquam? Blanditiis similique
+                voluptatem doloremque in accusantium, assumenda non eius eos ea qui fugiat illo tempore odio.</p>
+        </div>
+        <!--*3.2 Img Prestations-->
+        <div id="prestations">
+            <div class="imagesPrestations">
+                <h4>Nous trouver</h4>
+                <a href="#"><img src="/Assets/media/carte.JPG" alt="carte géographique"></a>
+            </div>
+
+            <div class="imagesPrestations">
+                <h4>Coté chambre</h4>
+                <a href="#"><img src="/Assets/media/chambre.JPG" alt="chambre"></a>
+            </div>
+
+            <div class="imagesPrestations">
+                <h4>coté cuisine</h4>
+                <a href="#"><img src="/Assets/media/repas.JPG" alt="repas"></a>
+            </div>
+        </div>
+    </section>
+    <!--*4-Section "Tourisme"-->
+    <section id="tourism">
+        <h2>Et tant à découvrir..</h2>
+        <ul>
+            <li id="ocean">
+                <p>L'océan Atlantique</p>
+            </li>
+            <li id="castle">
+                <p>Les châteaux du Médoc</p>
+            </li>
+            <li id="lighthouse">
+                <p>L'estuaire de la Gironde</p>
+            </li>
+            <li id="vineyard">
+                <p>Les vignoble Bordelais</p>
+            </li>
+        </ul>
+    </section>
+    <!--*5-Footer "Formulaire de contact & trait"-->
+    <footer>
+        <h2>Contactez-nous</h2>
+        <!--*5.1 form & trait-->
+        <form action="">
+            <input type="text" placeholder="Nom">
+            <input type="text" placeholder="Prénom">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+            <button>Envoyer</button>
+        </form>
+        <div id="secondLine"></div>
+        <!--*5.2 Copyright-->
+        <div id="copyrightAndIcons">
+            <!--*5.2.1-->
+            <div id="copyright">
+                <span>© tanguy H.; 2021</span>
+            </div>
+            <!--*5.2.2 Mise en place CDN font-awsome pour Icons (36min)-->
+            <div id="icons">
+                <a href="http://www.twitter.fr"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.fr"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
